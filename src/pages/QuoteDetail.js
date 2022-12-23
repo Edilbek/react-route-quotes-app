@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import { Route, useParams, Link, useRouteMatch } from 'react-router-dom';
 
-import Comments from '../../components/comments/Comments';
-import HighlightedQuote from '../../components/quotes/HighlightedQuote';
+import Comments from '../components/comments/Comments';
+import HighlightedQuote from '../components/quotes/HighlightedQuote';
 
 const DUMMY_QUOTES = [
   { id: 'q1', author: 'Max', text: 'Learning React is fun!' },
