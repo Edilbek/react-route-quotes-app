@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { Route, useParams } from 'react-router-dom';
+
+import Comments from '../../components/comments/Comments';
 
 const QuoteDetail = () => {
+  const params = useParams();
+  
   return (
-    <div>QuoteDetail</div>
+    <Fragment>
+      <h1>Quote Detail Page</h1>
+      <p>{params.quoteId}</p>
+      <Route path={`/quotes/${params.quoteId}/comments`} component={Comments} />
+    </Fragment>
   )
 }
 
